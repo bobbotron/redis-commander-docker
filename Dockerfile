@@ -4,14 +4,11 @@
 # http://github.com/tenstartups/redis-commander-docker
 #
 
-FROM tenstartups/alpine:latest
+FROM node:4.4.5
+
+#tenstartups/alpine:latest
 
 MAINTAINER Marc Lennox <marc.lennox@gmail.com>
-
-# Install packages.
-RUN \
-  apk --update add nodejs && \
-  rm -rf /var/cache/apk/*
 
 # Install node packages.
 RUN npm install -g redis-commander
