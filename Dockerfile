@@ -6,8 +6,6 @@
 
 FROM node:4.4.5
 
-#tenstartups/alpine:latest
-
 MAINTAINER Marc Lennox <marc.lennox@gmail.com>
 
 # Install node packages.
